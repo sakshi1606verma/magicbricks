@@ -69,7 +69,7 @@ for i in range(2,6):
     AllApartments(soup)
 df = pd.DataFrame({'Apartment':apartments,'Address/Area':society, 'Price':price,'Furnishing':furnishing,'Tenants Preferred':tenants_preferred,'Owner Name':owner})
 print(df)
-# writer = pd.ExcelWriter('12bhkflat.xlsx', engine='xlsxwriter')
+
 df.to_excel("new1.xlsx", sheet_name='Sheet1')
 
 apartments = []
@@ -93,7 +93,7 @@ for i in range(2,3):
 
 df = pd.DataFrame({'Apartment':apartments,'Address/Area':society, 'Price':price,'Furnishing':furnishing,'Tenants Preferred':tenants_preferred,'Owner Name':owner})
 print(df)
-# writer = pd.ExcelWriter('1234bhkflat.xlsx', engine='xlsxwriter')
+
 df.to_excel('new2.xlsx', sheet_name='Sheet1')
 
 
